@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MagnetoSoftwareTesting">
+    <test name="Magneto Tests">
+        <classes>
+            <class name="com.magneto.automation.tests.HomeTest" />
+        </classes>
+    </test>
+    <listeners>
+    	<listener class-name="com.test.listeners.ScreenshotListener"/>
+	</listeners>
+
+</suite>
