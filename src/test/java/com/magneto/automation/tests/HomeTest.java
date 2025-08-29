@@ -10,22 +10,45 @@ import com.test.listeners.RetryAnalyzer;
 
 public class HomeTest extends BaseTest {
 
-	@Test(dataProvider = "formData", retryAnalyzer = com.test.listeners.RetryAnalyzer.class)
+	@Test(dataProvider = "formData",retryAnalyzer = RetryAnalyzer.class,priority  =0, groups ={"smoke","regression"})
 
-	public void fillForm(String name, String email, String phonenum, String address) {
-		System.out.println("Navigating to Home Page");
-		HomePage home = new HomePage();
-		home.fillForm(name, email, phonenum, address);
-		System.out.println("Form is accessed");
-		Assert.fail("💣 Intentional failure for screenshot test");
+    public void fillForm(String name, String email, String phonenum, String address,String gender, String day) {
+		new HomeFlows()
+                .openHome()
+                .fillContact(name, email, phonenum, address)
+                .selectGenderAndDay(gender, day);
 	}
-
-	@Test(retryAnalyzer = com.test.listeners.RetryAnalyzer.class)
+    @Test(groups = {"smoke","regression"})
+    public void testSelectCountry() {
+        new HomeFlows()
+                .openHome()
+                .selectCountry("INDIA");
+    }
+    @Test
+    public void testAlert(){
+        new HomeFlows().handleSimpleAlert();
+    }
+	@Test(retryAnalyzer = com.test.listeners.RetryAnalyzer.class,priority = -1,groups = "smoke")
 	public void title() {
-		HomePage homepage = new HomePage();
-		String text = homepage.titleis();
-		Assert.assertEquals(text, "Automation Testing Practice", "title mismatch");
+		new HomeFlows()
+                .openHome()
+                .verifyTitle("Automation Testing Practice");
 	}
+    @Test
+    public void testConfirmAlert(){
+        new HomeFlows()
+                .handleConfirmAlert();
+    }
+    @Test(groups = {"smoke","regression"})
+    public void testPromptAlert(){
+        new HomeFlows()
+                .handlePromptAlert();
+    }
+    @Test(groups = {"smoke","regression"})
+    public void opentheTab(){
+        new HomeFlows()
+                .openTab();
+    }
 
 	@DataProvider(name = "formData")
 	public Object[][] getFormData() {

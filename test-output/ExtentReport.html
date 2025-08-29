@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 17, 2025 07:19:13 am</span></a>
+<a href="#"><span class="badge badge-primary">Aug 28, 2025 08:37:15 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -66,8 +71,8 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -75,25 +80,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">fillForm</p>
+            <p class="name">title</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:066</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>8:37:25 pm</span> / <span>00:00:00:141</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">fillForm</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:066</span>
+<h5 class="test-status text-pass">title</h5>
+<span class='badge badge-success'>08.28.2025 8:37:25 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:25 pm</span>
+<span class='badge badge-default'>00:00:00:141</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,12 +110,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:25 pm</td>
         <td>
-          ⚠️ Test Skipped: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          Passed
         </td>
       </tr>
   </tbody>
@@ -118,25 +121,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">fillForm</p>
+            <p class="name">title</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:020</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>8:37:25 pm</span> / <span>00:00:00:131</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">fillForm</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:020</span>
+<h5 class="test-status text-pass">title</h5>
+<span class='badge badge-success'>08.28.2025 8:37:25 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:25 pm</span>
+<span class='badge badge-default'>00:00:00:131</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -148,12 +151,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:25 pm</td>
         <td>
-          ⚠️ Test Skipped: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          ✅ Test Passed
         </td>
       </tr>
   </tbody>
@@ -161,25 +162,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">fillForm</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:025</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>8:37:27 pm</span> / <span>00:00:01:214</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">fillForm</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:025</span>
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:27 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:28 pm</span>
+<span class='badge badge-default'>00:00:01:214</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -191,12 +192,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:28 pm</td>
         <td>
-          ❌ Test Failed: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          Passed
         </td>
       </tr>
   </tbody>
@@ -204,25 +203,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">fillForm</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:031</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>8:37:27 pm</span> / <span>00:00:01:208</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">fillForm</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:031</span>
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:27 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:28 pm</span>
+<span class='badge badge-default'>00:00:01:208</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -234,12 +233,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:28 pm</td>
         <td>
-          ⚠️ Test Skipped: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          ✅ Test Passed
         </td>
       </tr>
   </tbody>
@@ -247,25 +244,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="5"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">fillForm</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:020</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>8:37:28 pm</span> / <span>00:00:00:948</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">fillForm</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:020</span>
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:28 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:29 pm</span>
+<span class='badge badge-default'>00:00:00:948</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -277,12 +274,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:29 pm</td>
         <td>
-          ⚠️ Test Skipped: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          Passed
         </td>
       </tr>
   </tbody>
@@ -290,25 +285,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="6"
+        <li class="test-item"  status="pass" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">fillForm</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:016</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>8:37:28 pm</span> / <span>00:00:00:945</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">fillForm</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:016</span>
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:28 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:29 pm</span>
+<span class='badge badge-default'>00:00:00:945</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -320,12 +315,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:29 pm</td>
         <td>
-          ❌ Test Failed: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          ✅ Test Passed
         </td>
       </tr>
   </tbody>
@@ -333,25 +326,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="7"
+        <li class="test-item"  status="pass" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">title</p>
+            <p class="name">fillForm</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:017</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>8:37:29 pm</span> / <span>00:00:00:821</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">title</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:017</span>
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:29 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:30 pm</span>
+<span class='badge badge-default'>00:00:00:821</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -363,12 +356,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:30 pm</td>
         <td>
-          ⚠️ Test Skipped: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          Passed
         </td>
       </tr>
   </tbody>
@@ -376,25 +367,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="8"
+        <li class="test-item"  status="pass" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">title</p>
+            <p class="name">fillForm</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:011</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>8:37:29 pm</span> / <span>00:00:00:821</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">title</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:011</span>
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:29 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:30 pm</span>
+<span class='badge badge-default'>00:00:00:821</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -406,12 +397,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:30 pm</td>
         <td>
-          ⚠️ Test Skipped: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          ✅ Test Passed
         </td>
       </tr>
   </tbody>
@@ -419,25 +408,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="9"
+        <li class="test-item"  status="pass" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">title</p>
+            <p class="name">fillForm</p>
             <p class="text-sm">
-              <span>07:19:18</span> / <span>00:00:00:015</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>8:37:30 pm</span> / <span>00:00:00:809</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">title</h5>
-<span class='badge badge-success'>07.17.2025 07:19:18</span>
-<span class='badge badge-danger'>07.17.2025 07:19:18</span>
-<span class='badge badge-default'>00:00:00:015</span>
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:30 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-default'>00:00:00:809</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -449,12 +438,576 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>07:19:18</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:31 pm</td>
         <td>
-          ❌ Test Failed: java.lang.Error: Unresolved compilation problem: 
-	Illegal modifier for the constructor in type HomePage; only public, protected & private are permitted
-
+          Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">fillForm</p>
+            <p class="text-sm">
+              <span>8:37:30 pm</span> / <span>00:00:00:809</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">fillForm</h5>
+<span class='badge badge-success'>08.28.2025 8:37:30 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-default'>00:00:00:809</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:31 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">opentheTab</p>
+            <p class="text-sm">
+              <span>8:37:31 pm</span> / <span>00:00:00:171</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">opentheTab</h5>
+<span class='badge badge-success'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-default'>00:00:00:171</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:31 pm</td>
+        <td>
+          Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">opentheTab</p>
+            <p class="text-sm">
+              <span>8:37:31 pm</span> / <span>00:00:00:170</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">opentheTab</h5>
+<span class='badge badge-success'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-default'>00:00:00:170</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:31 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testAlert</p>
+            <p class="text-sm">
+              <span>8:37:31 pm</span> / <span>00:00:00:149</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testAlert</h5>
+<span class='badge badge-success'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-default'>00:00:00:149</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:31 pm</td>
+        <td>
+          Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testAlert</p>
+            <p class="text-sm">
+              <span>8:37:31 pm</span> / <span>00:00:00:150</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testAlert</h5>
+<span class='badge badge-success'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-default'>00:00:00:150</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:31 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testConfirmAlert</p>
+            <p class="text-sm">
+              <span>8:37:31 pm</span> / <span>00:00:00:299</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testConfirmAlert</h5>
+<span class='badge badge-success'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-default'>00:00:00:299</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          Test Failed: testConfirmAlert
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\kiran\IdeaProjects\mgnetoSoftwareTesting\test-output\screenshots\testConfirmAlert_20250828_203731.png' src="C:\Users\kiran\IdeaProjects\mgnetoSoftwareTesting\test-output\screenshots\testConfirmAlert_20250828_203731.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am an alert box!}
+  (Session info: chrome=139.0.7258.154): I am an alert box!
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [271cc07b934bb3805c6334de3d2b7cca, findElement {using=xpath, value=//button[contains(text(),'Confirm')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.154, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63761}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63761/devtoo..., se:cdpVersion: 139.0.7258.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 271cc07b934bb3805c6334de3d2b7cca
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.magneto.automation.Pages.HomePage.handleConfirmAlert(HomePage.java:109)
+	at com.magneto.automation.tests.HomeFlows.handleConfirmAlert(HomeFlows.java:38)
+	at com.magneto.automation.tests.HomeTest.testConfirmAlert(HomeTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testConfirmAlert</p>
+            <p class="text-sm">
+              <span>8:37:31 pm</span> / <span>00:00:00:308</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testConfirmAlert</h5>
+<span class='badge badge-success'>08.28.2025 8:37:31 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-default'>00:00:00:308</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          ❌ Test Failed: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am an alert box!}
+  (Session info: chrome=139.0.7258.154): I am an alert box!
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [271cc07b934bb3805c6334de3d2b7cca, findElement {using=xpath, value=//button[contains(text(),'Confirm')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.154, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63761}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63761/devtoo..., se:cdpVersion: 139.0.7258.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 271cc07b934bb3805c6334de3d2b7cca
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testPromptAlert</p>
+            <p class="text-sm">
+              <span>8:37:32 pm</span> / <span>00:00:00:123</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testPromptAlert</h5>
+<span class='badge badge-success'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-default'>00:00:00:123</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testPromptAlert</p>
+            <p class="text-sm">
+              <span>8:37:32 pm</span> / <span>00:00:00:124</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testPromptAlert</h5>
+<span class='badge badge-success'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-default'>00:00:00:124</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testSelectCountry</p>
+            <p class="text-sm">
+              <span>8:37:32 pm</span> / <span>00:00:00:274</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testSelectCountry</h5>
+<span class='badge badge-success'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-default'>00:00:00:274</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          Test Failed: testSelectCountry
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\kiran\IdeaProjects\mgnetoSoftwareTesting\test-output\screenshots\testSelectCountry_20250828_203732.png' src="C:\Users\kiran\IdeaProjects\mgnetoSoftwareTesting\test-output\screenshots\testSelectCountry_20250828_203732.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: INDIA
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at com.magneto.automation.Pages.HomePage.selectCountry(HomePage.java:84)
+	at com.magneto.automation.tests.HomeFlows.selectCountry(HomeFlows.java:25)
+	at com.magneto.automation.tests.HomeTest.testSelectCountry(HomeTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testSelectCountry</p>
+            <p class="text-sm">
+              <span>8:37:32 pm</span> / <span>00:00:00:276</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testSelectCountry</h5>
+<span class='badge badge-success'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-danger'>08.28.2025 8:37:32 pm</span>
+<span class='badge badge-default'>00:00:00:276</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:37:32 pm</td>
+        <td>
+          ❌ Test Failed: org.openqa.selenium.NoSuchElementException: Cannot locate option with text: INDIA
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: driver.version: unknown
         </td>
       </tr>
   </tbody>
@@ -471,30 +1024,112 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.UnhandledAlertException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.UnhandledAlertException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:37:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testConfirmAlert</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:37:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>testSelectCountry</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 17, 2025 07:19:13 am</h3>
+<h3>Aug 28, 2025 08:37:15 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 17, 2025 07:19:19 am</h3>
+<h3>Aug 28, 2025 08:37:33 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>16</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>3</h3>
+<h3>4</h3>
 </div></div>
 </div>
 </div>
@@ -510,13 +1145,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='80%'>
+<b>16</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='33%'><b>3</b> tests failed,
-<b>6</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='20%'><b>4</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -533,10 +1168,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='72%'><b>16</b> events passed</small></div>
 <div>
-<small data-tooltip='33%'><b>3</b> events failed,
-<b data-tooltip='%'>6</b> others
+<small data-tooltip='27%'><b>6</b> events failed,
+<b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -552,7 +1187,7 @@
 </div></div>
 <script>
 var timeline = {
-"fillForm":0.066,"fillForm":0.02,"fillForm":0.025,"fillForm":0.031,"fillForm":0.02,"fillForm":0.016,"title":0.017,"title":0.011,"title":0.015
+"title":0.141,"title":0.131,"fillForm":1.214,"fillForm":1.208,"fillForm":0.948,"fillForm":0.945,"fillForm":0.821,"fillForm":0.821,"fillForm":0.809,"fillForm":0.809,"opentheTab":0.171,"opentheTab":0.17,"testAlert":0.149,"testAlert":0.15,"testConfirmAlert":0.299,"testConfirmAlert":0.308,"testPromptAlert":0.123,"testPromptAlert":0.124,"testSelectCountry":0.274,"testSelectCountry":0.276
 };
 </script>
 <div class="row">
@@ -561,10 +1196,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 3,
+passParent: 16,
+failParent: 4,
 warningParent: 0,
-skipParent: 6,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -578,10 +1213,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 3,
+passEvents: 16,
+failEvents: 6,
 warningEvents: 0,
-skipEvents: 6,
+skipEvents: 0,
 infoEvents: 0
 };
 </script>        </div>
